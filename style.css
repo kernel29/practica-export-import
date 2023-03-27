@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: row; /* indica si se muestran los items en filas o columnas */
+    flex-wrap: wrap; /*permite que se desplacen hacia abajo los item*/
+    justify-content:center; /* sirve para colocar los ítems de un contenedor mediante una disposición concreta a lo largo del eje principal(horizontal) */
+  }
+  
+  
+  .boton {
+    display: flex;
+    background-image: linear-gradient(to right, #7cb3e2, #448FCF);
+    height:40px;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  
+  
+  .ultimosestrenos {
+    border-style: groove;
+    margin: 25px;
+  }
+  
+  .home {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* estilo de titulo Kernel 29 del index */
+  .headermainmenu {
+    display: flex;
+    background-image: linear-gradient(to right, #7cb3e2, #448FCF);
+    justify-content:center;
+    align-items: center;/*centra de manera vertical*/
+    height:66px;
+    position:absolute;
+    width: 100%;
+    top: 0;
+  }
+  
+  /* botones de menu principal */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 278px;
+    height: 36px;
+    border-radius: 10px;
+    background: #448ecf;
+    background: -webkit-gradient(linear, left top, left bottom, from(#448ecf), to(#79b2e1));
+    background: -moz-linear-gradient(top, #448ecf, #79b2e1);
+    background: linear-gradient(to bottom, #448ecf, #79b2e1);
+    font: normal normal bold 20px arial;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .button:hover,
+  .button:active {
+    background: #29557c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#29557c), to(#79b2e1));
+    background: -moz-linear-gradient(top, #29557c, #79b2e1);
+    background: linear-gradient(to bottom, #29557c, #79b2e1);
+  }
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containerInfo{
+    position:fixed;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #448ecf;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  
+  }
+  .containerInfo span{
+    position: absolute;
+      top: 0; right: 10px;
+      text-shadow: -3px 2px rgba(0, 0, 0, 0.5);
+      font-size: 4rem;
+      font-weight: bolder;
+      color: #fff;
+      cursor: pointer;
+      z-index: 100;
+  }
+  
+  .containerInfo img{
+    cursor: auto;
+  }
+  
+  .containerInfo p, h3{
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    color: white;
+    
+  }
+  
+  .btnCargarMas{
+    cursor: pointer;
+  }
+  .classbtnRegresar{
+    cursor: pointer;
+  }
+  
+  .menuGeneros{
+    display: flex;
+    flex-direction: row; /* indica si se muestran los items en filas o columnas */
+    flex-wrap: wrap; /*permite que se desplacen hacia abajo los item*/
+    justify-content:center; /* sirve para colocar los ítems de un contenedor mediante una disposición concreta a lo largo del eje principal(horizontal) */
+  }
+  
+  .enlaceGenero{
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  /* .arrayCompleto p {
+    color: black;
+    text-align: left;
+  } */
+  
+  .flexinfo img{
+    cursor: auto;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  header {
+    display: flex;
+    background-image: linear-gradient(to right, #7cb3e2, #448FCF);
+    justify-content:center;
+    align-items: center;/*centra de manera vertical*/
+    height:66px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    color: #ffffff;
+  }
+  body {
+    padding:67px 0px 0px 0px; 
+  }
+  
+  h1 h2 {
+    color: white;
+    text-align: center;
+  }
+  p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+  }
+  img {
+    margin: 10px;  
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width:294px) {
+    .button {
+        width: 90%;
+        font: 15px;
+    }
+  }
+  @media (max-width: 528px) {
+    .imagenresponsive {
+        width: 95%;
+    
+    }
+  h2  {
+    text-align: center;
+  }
+  }
+  @media (max-width:381px) {
+  .ultimosestrenos {
+    border-style: groove;
+    margin: 20px;
+    }
+  }
+  @media (max-width:371px) {
+    .ultimosestrenos {
+    border-style: groove;
+    margin: 10px;
+    }
+  }
+  @media (max-width:351px) {
+    .ultimosestrenos {
+    border-style: groove;
+    margin: 0px;
+    }
+  }
+  @media (max-width:331px) {
+    .ultimosestrenos {
+    border-style: none;
+    margin: 0px;
+    }
+  }
+  
+  
